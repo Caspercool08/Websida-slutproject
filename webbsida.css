@@ -39,3 +39,29 @@ h3 { font-size: 1.1rem; }
   margin: 0 auto;
   padding: 0 1.5rem;
 }
+
+.knapp {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  min-height: 44px;
+  background-color: #b8622a;
+  color: white;
+  border-radius: 5px;
+  font-weight: 700;
+  border: 2px solid #b8622a;
+  transition: background-color 0.2s;
+}
+
+.knapp:hover {
+  background-color: #96491e;
+}
+
+.knapp-vit {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+.knapp-vit:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}

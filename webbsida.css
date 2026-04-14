@@ -65,3 +65,54 @@ h3 { font-size: 1.1rem; }
 .knapp-vit:hover {
   background-color: rgba(255, 255, 255, 0.15);
 }
+
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+header > .innehall {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Quicksand', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 0.2rem;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  min-height: 44px;
+  font-weight: 700;
+  color: #555;
+  border-radius: 5px;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+nav a:hover,
+nav a.aktiv {
+  color: #b8622a;
+  background-color: rgba(184, 98, 42, 0.08);
+}
+
+

@@ -116,3 +116,56 @@ nav a.aktiv {
 }
 
 
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background-image: url("startsida.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  padding: 2rem 1.5rem;
+  animation: fade-in 0.8s ease;
+}
+
+.liten-text {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text h1,
+.hero-text p {
+  color: white;
+}
+
+.hero-text h1 {
+  margin-bottom: 1rem;
+}
+
+.hero-text h1 em {
+  font-style: italic;
+  color: #f0c57a;
+}
+
+.hero-text p {
+  font-size: 1.05rem;
+  margin-bottom: 1.8rem;
+}
+
+

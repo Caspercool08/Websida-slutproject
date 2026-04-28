@@ -169,3 +169,59 @@ nav a.aktiv {
 }
 
 
+.meny {
+  padding: 5rem 0;
+  background-color: #faf6f0;
+}
+
+.meny .innehall > h2 {
+  text-align: center;
+  color: #111;
+  margin-bottom: 0.4rem;
+}
+
+.meny .innehall > p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2.5rem;
+}
+
+.kort-rad {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.kort {
+  flex: 1;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.kort:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.kort img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.kort-info {
+  padding: 1.2rem;
+}
+
+.kort-info h3 {
+  color: #111;
+  margin-bottom: 0.4rem;
+}
+
+.kort-info p {
+  font-size: 0.92rem;
+  color: #555;
+}

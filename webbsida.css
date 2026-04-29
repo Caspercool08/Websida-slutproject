@@ -298,3 +298,50 @@ nav a.aktiv {
   font-family: 'Quicksand', serif;
   color: #f0c57a;
 }
+
+
+footer {
+  background-color: #1a0e06;
+  padding: 3rem 0 2rem;
+}
+
+.footer-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-namn {
+  font-family: 'Quicksand', serif;
+  font-size: 1.3rem;
+  display: block;
+  margin-bottom: 0.4rem;
+  color: white;
+}
+
+footer p {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.9rem;
+}
+
+.footer-lankar {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 700;
+  font-size: 0.9rem;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: #f0c57a;
+}

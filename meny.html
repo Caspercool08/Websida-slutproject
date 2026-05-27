@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meny - Café Drape</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="webbsida.css">
+</head>
+
+
+<body>
+
+  <header>
+    <div class="innehall">
+      <a href="webbsida.html" class="logo">Café Drape</a>
+
+      <button id="hamburger" aria-label="Öppna meny" aria-expanded="false" aria-controls="nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="nav">
+        <ul>
+          <li><a href="webbsida.html">Start</a></li>
+          <li><a href="meny.html" class="aktiv">Meny</a></li>
+          <li><a href="omoss.html">Om oss</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="sid-huvud">
+      <div class="innehall">
+        <h1>Vår meny</h1>
+        <p>Allt är hembakat och tillagat med kärlek varje dag.</p>
+      </div>
+    </section>
+
+    <section class="meny-kategori" id="kaffe">
+      <div class="innehall">
+        <h2>Kaffe</h2>
+
+        <ul class="meny-lista">
+          <li class="meny-rad">
+            <div>
+              <h3>Espresso</h3>
+              <p>Vår klassiska espresso.</p>
+            </div>
+            <span class="pris">29 kr</span>
+          </li>
+          <li class="meny-rad">
+            <div>
+              <h3>Cappuccino</h3>
+              <p>Espresso med mjölkskum.</p>
+            </div>
+            <span class="pris">45 kr</span>
+          </li>
+          <li class="meny-rad">
+            <div>
+              <h3>Latte</h3>
+              <p>Mild och krämig.</p>
+            </div>
+            <span class="pris">49 kr</span>
+          </li>
+          <li class="meny-rad">
+            <div>
+              <h3>Filterkaffe</h3>
+              <p>Bryggd dagligen på handplockade bönor.</p>
+            </div>
+            <span class="pris">35 kr</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="meny-kategori grå-bg" id="bakelser">
+      <div class="innehall">
+        <h2>Bakelser</h2>
+
+        <ul class="meny-lista">
+          <li class="meny-rad">
+            <div>
+              <h3>Kanelbulle</h3>
+              <p>Nybakad varje morgon med kardemumma och kanel.</p>
+            </div>
+            <span class="pris">39 kr</span>
+          </li>
+          <li class="meny-rad">
+            <div>
+              <h3>Croissant</h3>
+              <p>Smörig och flagnande, serveras varm.</p>
+            </div>
+            <span class="pris">45 kr</span>
+          </li>
+          <li class="meny-rad">
+            <div>
+              <h3>Kladdkaka</h3>
+              <p>Serveras med grädde.</p>
+            </div>
+            <span class="pris">55 kr</span>
+          </li>
+          <li class="meny-rad">
+            <div>
+              <h3>Muffins</h3>
+              <p>Choklad eller karamell.</p>
+            </div>
+            <span class="pris">35 kr</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="meny-kategori" id="lunch">
+      <div class="innehall">
+        <h2>Lunch</h2>
+
+        <ul class="meny-lista">
+          <li class="meny-rad">
+            <div>
+              <h3>Dagens soppa</h3>
+              <p>Hemlagad soppa med bröd, varierar varje dag.</p>
+            </div>
+            <span class="pris">99 kr</span>
+          </li>
+          <li class="meny-rad">
+            <div>
+              <h3>Smörgås</h3>
+              <p>Surdegsbröd med ost, skinka och grönsaker.</p>
+            </div>
+            <span class="pris">89 kr</span>
+          </li>
+          <li class="meny-rad">
+            <div>
+              <h3>Sallad</h3>
+              <p>Med dressing.</p>
+            </div>
+            <span class="pris">105 kr</span>
+          </li>
+          <li class="meny-rad">
+            <div>
+              <h3>Paj</h3>
+              <p>Hemlagad paj.</p>
+            </div>
+            <span class="pris">95 kr</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="innehall footer-layout">
+      <div>
+        <strong class="footer-namn">Café Drape</strong>
+        <p>Kaffe med själ & smak sedan 2012.</p>
+      </div>
+      <nav aria-label="Sidfotslänkar">
+        <ul class="footer-lankar">
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="kontakt.html">Adress</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="webbsida.js"></script>
+</body>
+</html>

@@ -530,3 +530,64 @@ footer a:hover {
   font-size: 1rem;
   white-space: nowrap;
 }
+
+.om-sektion {
+  padding: 5rem 0;
+}
+
+.om-sektion h2 {
+  color: #111;
+  margin-bottom: 1.5rem;
+}
+
+.om-grid {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.om-text {
+  flex: 1;
+}
+
+.om-text p {
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.om-text p:last-child {
+  margin-bottom: 0;
+}
+
+.om-bild {
+  flex: 1;
+  border-radius: 8px;
+  max-height: 400px;
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+}
+
+.varden-lista {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.varden-kort {
+  flex: 1;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.varden-kort h3 {
+  color: #b8622a;
+  margin-bottom: 0.6rem;
+}
+
+.varden-kort p {
+  color: #555;
+  font-size: 0.92rem;
+}

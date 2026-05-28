@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Om oss - Café Drape</title>
+
+    <link rel="stylesheet" href="webbsida.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="innehall">
+      <a href="webbsida.html" class="logo">Café Drape</a>
+
+      <button id="hamburger" aria-label="Öppna meny" aria-expanded="false" aria-controls="nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="nav">
+        <ul>
+          <li><a href="webbsida.html">Start</a></li>
+          <li><a href="meny.html">Meny</a></li>
+          <li><a href="omoss.html" class="aktiv">Om oss</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="sid-huvud">
+      <div class="innehall">
+        <h1>Om oss</h1>
+        <p>Vi är ett litet café med stort hjärta.</p>
+      </div>
+    </section>
+
+    <section class="om-sektion">
+      <div class="innehall om-grid">
+
+        <div class="om-text">
+          <h2>Vår historia</h2>
+          <p>Café Drape öppnade sina dörrar 2012 med en enkel idé - att servera riktigt bra kaffe i ett bra café. Det som började som ett litet café har vuxit till ett av stadens mest älskade cafén.</p>
+          <p>Vi tror på att ta det lugnt, njuta av en kopp kaffe och ta en paus från vardagen. Allt vi serverar är hembakat eller tillagat från grunden varje dag.</p>
+        </div>
+
+        <img
+          src="bildföromosssida.jpg"
+          srcset="bildföromosssida-liten.jpg 400w,
+                  bildföromosssida.jpg 800w"
+          sizes="(max-width: 600px) 100vw, 50vw"
+          alt="Espresso"
+          loading="lazy"
+          width="800" height="600"
+          class="om-bild"
+        />
+
+      </div>
+    </section>
+
+    <section class="om-sektion grå-bg">
+      <div class="innehall">
+        <h2>Det vi tror på</h2>
+
+        <ul class="varden-lista">
+          <li class="varden-kort">
+            <h3>Kvalitet</h3>
+            <p>Vi väljer råvaror med omsorg och samarbetar med lokala leverantörer för att hålla hög kvalitet på allt vi serverar.</p>
+          </li>
+          <li class="varden-kort">
+            <h3>Hållbarhet</h3>
+            <p>Vi minimerar matsvinnet, källsorterar och köper in ekologiska råvaror där det är möjligt.</p>
+          </li>
+          <li class="varden-kort">
+            <h3>Gemenskap</h3>
+            <p>Cafét är en mötesplats för alla. Vi vill att alla ska känna sig välkomna.</p>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="innehall footer-layout">
+      <div>
+        <strong class="footer-namn">Café Drape</strong>
+        <p>Kaffe med själ & smak sedan 2012.</p>
+      </div>
+      <nav aria-label="Sidfotslänkar">
+        <ul class="footer-lankar">
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="kontakt.html">Adress</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="webbsida.js"></script>
+</body>
+</html>

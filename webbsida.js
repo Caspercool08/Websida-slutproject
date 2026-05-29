@@ -1,22 +1,27 @@
-const hamburger = document.getElementById("hamburger");
-const nav = document.getElementById("nav");
+// Hämtar hamburger-knappen och nav-elementet från HTML:en
+const hamburger = document.getElementById('hamburger');
+const nav = document.getElementById('nav');
 
+// Körs när man klickar på hamburger-knappen
+hamburger.addEventListener('click', function() {
 
-hamburger.addEventListener("click", function() {
+  // toggle lägger till klassen "visas" om den saknas, tar bort den om den finns
+  const arOppen = nav.classList.toggle('visas');
 
-  const arOppen = nav.classList.toggle("visas");
+  // Uppdaterar ikonen – true = visa X, false = visa tre linjer
+  hamburger.classList.toggle('oppen', arOppen);
 
-  hamburger.classList.toggle("oppen", arOppen);
-
-  hamburger.setAttribute("aria-expanded", arOppen);
+  // Uppdaterar aria-expanded
+  hamburger.setAttribute('aria-expanded', arOppen);
 });
 
-document.addEventListener("click", function(event) {
-  const header = document.querySelector("header");
+// Stänger menyn om man klickar utanför headern
+document.addEventListener('click', function(event) {
+  const header = document.querySelector('header');
 
   if (!header.contains(event.target)) {
-    nav.classList.remove("visas");
-    hamburger.classList.remove("oppen");
-    hamburger.setAttribute("aria-expanded", false);
+    nav.classList.remove('visas');
+    hamburger.classList.remove('oppen');
+    hamburger.setAttribute('aria-expanded', false);
   }
 });

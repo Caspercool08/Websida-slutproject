@@ -591,3 +591,136 @@ footer a:hover {
   color: #555;
   font-size: 0.92rem;
 }
+
+
+.kontakt-sektion {
+  padding: 5rem 0;
+}
+
+/* Grid med formulär till vänster och adress till höger */
+.kontakt-grid {
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.formulär-del {
+  flex: 1;
+}
+
+.formulär-del h2 {
+  color: #111;
+  margin-bottom: 1.5rem;
+}
+
+/* Formuläret */
+.formulär {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Varje fält med label ovanför */
+.formulär-grupp {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+/* label-taggar inuti formuläret */
+.formulär label {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* input och textarea i formuläret */
+.formulär input,
+.formulär textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-size: 1rem;
+  color: #111;
+  background-color: white;
+  transition: border-color 0.2s;
+  min-height: 44px;
+}
+
+/* Kantlinje när man klickar i ett fält */
+.formulär input:focus,
+.formulär textarea:focus {
+  outline: none;
+  border-color: #b8622a;
+}
+
+.formulär textarea {
+  resize: vertical; /* Användaren kan dra i höjden */
+}
+
+.formulär .knapp {
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+/* Adressdelen till höger */
+.adress-del {
+  flex: 1;
+}
+
+.adress-del h2 {
+  color: #111;
+  margin-bottom: 1.5rem;
+}
+
+/* Listan med adressuppgifter */
+.adress-lista {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Varje rad i adresslistan */
+.adress-lista li {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.adress-lista li:last-child {
+  border-bottom: none;
+}
+
+/* strong-taggar inuti adress-lista */
+.adress-lista strong {
+  font-size: 0.85rem;
+  color: #b8622a;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+}
+
+.adress-lista span {
+  color: #333;
+}
+
+/* Karta */
+.karta-sektion {
+  padding: 4rem 0;
+  background-color: #f0ebe3;
+}
+
+.karta-sektion h2 {
+  color: #111;
+  margin-bottom: 1.5rem;
+}
+
+/* OpenStreetMap iframe */
+.karta {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 8px;
+  display: block;
+}

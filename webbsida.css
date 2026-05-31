@@ -724,3 +724,42 @@ footer a:hover {
   border-radius: 8px;
   display: block;
 }
+
+@media (max-width: 850px) {
+  .om-grid       { flex-direction: column; }
+  .om-bild       { width: 100%; flex: none; }
+  .varden-lista  { flex-wrap: wrap; }
+  .varden-kort   { flex: 1 1 calc(50% - 1rem); }
+  .kontakt-grid  { flex-direction: column; }
+}
+
+@media (max-width: 580px) {
+  .sid-huvud  { padding: 3rem 0; }
+  .varden-kort { flex: 1 1 100%; }
+  .karta      { height: 280px; }
+  .meny-rad   { flex-direction: column; gap: 0.3rem; }
+}
+
+/* Röd kantlinje på fält som är fel ifyllda */
+.fel-kant {
+  border-color: #cc0000 !important;
+}
+
+/* Felmeddelande-texten under fältet */
+.felmeddelande {
+  color: #cc0000;
+  font-size: 0.88rem;
+  margin-top: 0.2rem;
+}
+
+/* Grönt bekräftelsemeddelande när formuläret skickats */
+.tack-meddelande {
+  color: #2a7a2a;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 1.5rem;
+  background-color: #e8f5e8;
+  border-radius: 5px;
+  border: 1px solid #a8d5a8;
+}
+

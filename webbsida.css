@@ -763,3 +763,52 @@ footer a:hover {
   border: 1px solid #a8d5a8;
 }
 
+.meny-tabell {
+  width: 100%;
+  border-collapse: collapse; /* Tar bort dubbelkantlinjer */
+  margin-top: 1rem;
+}
+
+/* Alla celler */
+.meny-tabell th,
+.meny-tabell td {
+  padding: 1rem 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Översta raden – rubrikraden */
+.meny-tabell thead tr {
+  background-color: #2c1a0e;
+}
+
+.meny-tabell thead th {
+  color: white;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Varannan rad i tbody får en ljusare bakgrund */
+.meny-tabell tbody tr:nth-child(odd) {
+  background-color: #faf6f0;
+}
+
+.meny-tabell tbody tr:nth-child(even) {
+  background-color: #f0ebe3;
+}
+
+/* Hover-effekt på tbody-rader */
+.meny-tabell tbody tr:hover {
+  background-color: #e8ddd0;
+}
+
+/* Sista raden – tfoot – får en egen stil */
+.meny-tabell tfoot tr {
+  background-color: #b8622a;
+}
+
+.meny-tabell tfoot td {
+  color: white;
+  font-weight: 700;
+}
